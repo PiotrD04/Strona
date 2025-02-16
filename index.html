@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korepetycje</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+    <div class="naglowek">
+        <h1 class="title">Korepetycje z matematyki</h1>
+        <button onclick="toggleDarkMode()">Przełącz tryb</button>
+            <nav class="nav">
+              <button class="nav-button"><a href="#opis">O mnie</a></button>
+              <button class="nav-button"><a href="#timetable">Szczegóły zajęć</a></button>
+              <button class="nav-button"><a href="#kontakt">Kontakt</a></button>
+              <button class="nav-button"><a href="#opinie">Opinie</a></button>
+                
+             
+            </nav>
+            
+    </div>
+    
+    <img src="https://cdn.pixabay.com/photo/2019/04/14/10/27/book-4126483_640.jpg" alt="" id="foto-glowne">
+    
+    <div class="strona" id="opis" >
+        <h2>Krótko o mnie</h2>
+        Cześć! Nazywam się <u><b>Piotr Dębowski</b></u> i studiuję Matematykę w Technice na Politechnice Poznańskiej. 
+        Od kilku lat prowadzę korepetycje z matematyki i fizyki na każdym poziomie edukacji, pomagając uczniom osiągać ich cele.
+         roku 2023/24 wszyscy moi uczniowie zdali maturę z wynikiem średnim <u><b>67% (podstawa) i 32% (rozszerzenie)</b></u>. 
+         Interesuję się także tworzeniem stron, elektroniką i sportem, a w wolnym czasie uczę się nowych języków obcych. 
+        <br> Zapraszam do kontaktu – pokażę, że nauka może być prostsza, niż się wydaje!
+    </div>
+<hr>
+    <div class="strona" id="timetable">
+        <h2>Szczegóły zajęć indywidualnych i grupowych</h2>
+
+        Wszystkie zajęcia prowadzę wyłącznie <b>online</b>, co zapewnia wygodę i elastyczność zarówno dla mnie, jak i dla uczniów. 
+        Poniżej krótkie przedstawienie form zajęć.
+      <div class="offer">
+        <div class="plan">
+          <h2>Szkoła średnia i podstawowa</h2>
+          <h3>Poziom podstawowy i rozszerzony</h3>
+          <div class="price">80zł/60min
+            <p>120zł/90min</p>
+          </div>
+          <ul class="detale">
+            <li>Przygotowanie do sprawdzianów</li>
+            <li>Przygotowanie do egzaminów</li>
+            <li>Dostęp do notesu 24/7</li>
+            <li>Przygotowanie do bieżącego materiału</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h2>Studia</h2>
+          <div class="price">100zł/60min
+            <p>150zł/90min</p>
+          </div>
+          <ol class="detale">
+          <li>Algebra liniowa</li>
+          <ul>
+            <li>Liczby zespolone</li>
+            <li>Macierze</li>
+            
+          </ul>
+          <li>Analiza matematyczna</li>
+          <ul>
+            <li>Całki</li>
+            <li>Pochodne</li>
+            <li>Funkcje wielu zmiennych</li>
+            <li>Granice</li>
+          </ul>
+          <li>Rachunek różniczkowy</li>
+          <li>Rachunek prawdopodobieństwa</li>
+          <li>Matematyka dyskretna</li>
+          <li>Mechanika</li>
+          </ol>
+        </div>
+
+      </div>
+
+
+
+
+       
+        <br>
+        <h3>Zapraszam do kontaktu i rezerwacji zajęć!</h3>
+    </div>
+<hr>
+    <div class="strona" id="kontakt">
+        <h2>Kontakt</h2>
+        <p><a href="mailto:piotrkacper04@gmail.com">Email</a>
+        </p>
+        <p><a href="https://www.facebook.com/piotr.debowski.92102?locale=pl_PL">Facebook</a></p>
+        <p><a href="https://www.tiktok.com/@kreatywna_matma23?is_from_webapp=1&sender_device=pc">Tiktok</a></p>
+        <p><a href="https://discord.gg/XCaQwrFf">Discord</a></p>
+    </div>
+<hr>
+<div class="slideshow-container" id="opinie">
+  <h2>Opinie</h2>
+  <div class="slide"><img src="Gabi-opinia.png" alt="Gabi"></div>
+  <div class="slide"><img src="Wiktor-opinia.png" alt="Wiktor"></div>
+  <div class="slide"><img src="Mikołaj-opinia.png" alt="Mikołaj"></div>
+  <div class="slide"><img src="Marcin-opinia.png" alt="Marcin"></div>
+  <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+  <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+<div class="dots">
+  <span class="dot" onclick="setSlide(0)"></span>
+  <span class="dot" onclick="setSlide(1)"></span>
+  <span class="dot" onclick="setSlide(2)"></span>
+  <span class="dot" onclick="setSlide(3)"></span>
+</div>
+<hr>
+    <div class="strona">
+        <h3>Jeśli masz pytanie, możesz wysłać pytanie poprzez formularz poniżej</h3>
+    <form id="contactForm" action="MAIL_HANDLER_URL" method="post">
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required><br><br>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+      
+        <label for="message">Wiadomość:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+      
+        <button type="submit">Wyślij</button>
+      </form>
+      
+
+</div>
+<script src="main.js"></script>
+
+
+
+
+</body>
+</html>
